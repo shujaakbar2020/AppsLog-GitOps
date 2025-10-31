@@ -5,11 +5,29 @@ global:
     environment: prod
 
 # Per-service overrides
-app:
+service-app:
   replicaCount: 1
   service:
     type: LoadBalancer
   resources:
     limits:
-      cpu: "256"
+      cpu: "200m"
       memory: "256Mi"
+  image:
+    repository: saakbar/service-app
+    pullPolicy: IfNotPresent
+    tag: "latest"
+
+# Per-service overrides
+service-api:
+  image:
+    repository: saakbar/service-app
+    pullPolicy: IfNotPresent
+    tag: "latest"
+
+# Per-service overrides
+service-data:
+  image:
+    repository: saakbar/service-app
+    pullPolicy: IfNotPresent
+    tag: "latest"

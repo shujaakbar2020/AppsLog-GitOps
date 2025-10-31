@@ -1,9 +1,9 @@
 replicaCount: 1
 
 image:
-  repository: service-api
+  repository: saakbar/service-api
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: "v1.1.0"
 
 service:
   type: ClusterIP
