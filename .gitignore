@@ -1,0 +1,4 @@
+.idea/*
+charts/*/requirements.lock
+*.tmproj
+.vscode/

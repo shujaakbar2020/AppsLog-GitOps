@@ -1,0 +1,9 @@
+apiVersion: v2
+name: service-app
+description: React/Node app service
+type: application
+version: 0.1.0
+appVersion: "1.0"
+maintainers:
+  - name: service-app-team
+    email: shujaakbar2024@gmail.com

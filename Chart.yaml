@@ -1,0 +1,5 @@
+apiVersion: v2
+name: AppsLog-GitOps
+description: Full stack – frontend + backend + auth + monitoring
+type: application
+version: 0.1.0

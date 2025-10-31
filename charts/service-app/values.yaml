@@ -1,0 +1,21 @@
+replicaCount: 1
+
+image:
+  repository: service-app
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
+  requests:
+    cpu: "200m"
+    memory: "256Mi"
+
+config:
+  apiBaseUrl: "http://{{ .Release.Name }}-backend:5000"

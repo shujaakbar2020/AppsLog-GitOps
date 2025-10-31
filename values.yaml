@@ -1,0 +1,15 @@
+global:
+  namespace: production
+  imagePullSecrets: []
+  labels:
+    environment: prod
+
+# Per-service overrides
+app:
+  replicaCount: 1
+  service:
+    type: LoadBalancer
+  resources:
+    limits:
+      cpu: "256"
+      memory: "256Mi"
