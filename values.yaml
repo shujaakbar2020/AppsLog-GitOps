@@ -28,6 +28,3 @@ service-data:
     repository: saakbar/service-app
     pullPolicy: IfNotPresent
     tag: "v1.0.1"
-service-apI:
-  image:
-    tag: v1.0.0
