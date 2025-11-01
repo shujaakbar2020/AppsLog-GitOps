@@ -3,7 +3,6 @@ global:
   imagePullSecrets: []
   labels:
     environment: prod
-
 # Per-service overrides
 service-app:
   replicaCount: 1
@@ -16,18 +15,19 @@ service-app:
   image:
     repository: saakbar/service-app
     pullPolicy: IfNotPresent
-    tag: "latest"
-
+    tag: "v"
 # Per-service overrides
 service-api:
   image:
     repository: saakbar/service-app
     pullPolicy: IfNotPresent
     tag: "latest"
-
 # Per-service overrides
 service-data:
   image:
     repository: saakbar/service-app
     pullPolicy: IfNotPresent
-    tag: "latest"
+    tag: "v"
+service-apI:
+  image:
+    tag: v
