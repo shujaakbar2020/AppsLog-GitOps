@@ -15,19 +15,19 @@ service-app:
   image:
     repository: saakbar/service-app
     pullPolicy: IfNotPresent
-    tag: "v1.0.0"
+    tag: "v1.0.1"
 # Per-service overrides
 service-api:
   image:
     repository: saakbar/service-app
     pullPolicy: IfNotPresent
-    tag: "latest"
+    tag: "v1.0.1"
 # Per-service overrides
 service-data:
   image:
     repository: saakbar/service-app
     pullPolicy: IfNotPresent
-    tag: "v1.0.0"
+    tag: "v1.0.1"
 service-apI:
   image:
     tag: v1.0.0
